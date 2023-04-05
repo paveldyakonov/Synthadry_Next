@@ -63,7 +63,7 @@ const _allUsers: User[] = [
     profession: "Разработчик",
     image: "/images/users/Mikanev.png",
     mark: "7",
-    tasks: ["Что-то надо сделать"],
+    tasks: ["Создание презентаций", "Настройки игры"],
   },
   {
     id: "6",
