@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+.about-section {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url('../public/images/temp_1_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 115vh;
+
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: bold;
+        font-size: 1.6rem;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        margin: 0 2rem 1rem 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+}
+
+.main_character {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}

@@ -1,0 +1,89 @@
+@import "./variables.scss";
+
+.card_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    gap: 30px;
+
+    & .null_tasks {
+        color: aliceblue;
+        text-align: center;
+    }
+
+    & .tasks_block {
+        padding: 10px;
+        border: 2px solid $primary_color;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    & .task_title {
+        color: aliceblue;
+        font-weight: bold;
+    }
+
+    & .task_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    gap: 20px;
+    border-radius: 20px;
+    width: 50vw;
+    min-width: 300px;
+    height: 90vh;
+    min-height: 400px;
+    max-height: 600px;
+    transition: all .3s ease-in-out;
+
+    &__img {
+        position: relative;
+        width: 40vw;
+        min-width: 150px;
+        max-width: 350px;
+        height: 40vw;
+        min-height: 150px;
+        max-height: 350px;
+    }
+
+    &__name {
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    &__profession {
+        text-align: center;
+        color: grey;
+        font-size: medium;
+    }
+
+    &__mark {
+        text-align: center;
+        color: dodgerblue;
+    }
+}
+
+@media (max-width: 420px) {
+    .card {
+        height: 400px;
+    }
+}

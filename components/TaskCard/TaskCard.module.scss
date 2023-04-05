@@ -1,0 +1,36 @@
+@import "@styles/variables.scss";
+
+.card {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50vw;
+    min-width: 300px;
+    background-color: aliceblue;
+    border-radius: 20px;
+
+    &__icon_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        background-color: $primary_color;
+    }
+
+    & .icon_block__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    &__task {
+        width: 40vw;
+        color: black;
+        font-size: 20px;
+        margin-left: auto;
+        text-align: center;
+        margin-right: auto;
+    }
+}

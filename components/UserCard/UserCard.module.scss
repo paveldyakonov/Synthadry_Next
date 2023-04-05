@@ -1,0 +1,58 @@
+@import "@styles/variables.scss";
+
+.card_link {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    border-radius: 20px;
+    gap: 20px;
+    width: 50vw;
+    min-width: 300px;
+    max-width: 750px;
+    height: 25vw;
+    min-height: 150px;
+    max-height: 400px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        width: 52vw;
+        height: 27vw;
+        transition: all .3s ease-in-out;
+        box-shadow: $box-shadow;
+    }
+
+    &__img {
+        position: relative;
+        width: 20vw;
+        min-width: 100px;
+        max-width: 200px;
+        height: 20vw;
+        min-height: 100px;
+        max-height: 200px;
+    }
+
+    & .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        text-align: center;
+
+        &__profession {
+            color: crimson;
+        }
+
+        &__mark {
+            color: dodgerblue;
+        }
+    }
+}
