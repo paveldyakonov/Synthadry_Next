@@ -27,12 +27,16 @@
                 box-shadow: $box-shadow;
                 background-color: aliceblue;
                 border-radius: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
             }
         }
 
         & .active {
             box-shadow: $box-shadow;
             background-color: aliceblue;
+            padding-left: 5px;
+            padding-right: 5px;
             border-radius: 10px;
         }
 
