@@ -28,7 +28,7 @@ const _allUsers: User[] = [
     id: "2",
     name: "Миканев Артем",
     profession: "Дизайнер, Разработчик",
-    image: "/images/users/Mikanev.png",
+    image: "/images/users/MikanevArtem.jpg",
     mark: "95",
     tasks: [
       "Создание контроллера света для автомобилей, вход и выход из машины",
@@ -77,7 +77,7 @@ const _allUsers: User[] = [
     id: "7",
     name: "Костючек Артем",
     profession: "Разработчик",
-    image: "/images/users/Kostuchek.jpg",
+    image: "/images/users/Kostuchekk.jpg",
     mark: "12",
     tasks: ["Режим боя"],
   },
@@ -120,6 +120,14 @@ const _allUsers: User[] = [
     image: "/images/users/Nikolskiy.jpg",
     mark: "7",
     tasks: ["Разработка механики управления машиной", "Улучшение камеры"],
+  },
+  {
+    id: "13",
+    name: "Кузнецов Михаил",
+    profession: "Моделлер",
+    image: "/images/users/Kuznetcov.jpg",
+    mark: "0",
+    tasks: [],
   },
 ];
 
