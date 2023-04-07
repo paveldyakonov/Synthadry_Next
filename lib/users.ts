@@ -129,6 +129,14 @@ const _allUsers: User[] = [
     mark: "0",
     tasks: [],
   },
+  {
+    id: "14",
+    name: "Бугров Дмитрий",
+    profession: "Моделлер",
+    image: "/images/users/Bugrov.jpg",
+    mark: "0",
+    tasks: [],
+  },
 ];
 
 export const getAllUsers = (): User[] => {
