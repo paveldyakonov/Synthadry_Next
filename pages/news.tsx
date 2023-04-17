@@ -3,14 +3,15 @@ import VideoPlayer from "@components/VideoPlayer";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from "next";
-import { getAllVideos, Video } from "@lib/videos";
+import { getAllNews, KindNews, News } from "@lib/news";
 
 import styles from "@styles/news.module.scss";
+import ImageNews from "@components/ImageNews/ImageNews";
 
 const NewsPage: React.FC = (): any => {
-  const [allVideos, setAllVideos] = useState([]);
+  const [allNews, setAllNews] = useState([]);
   useEffect(() => {
-    setAllVideos(() => getAllVideos());
+    setAllNews(() => getAllNews());
   }, []);
 
   return (
@@ -21,9 +22,13 @@ const NewsPage: React.FC = (): any => {
         </Head>
         <div className={styles.news}>
           <h1 className={styles.news__title}>Новости</h1>
-          {allVideos.map((video: Video) => (
-            <VideoPlayer key={video.url} title={video.title} url={video.url} />
-          ))}
+          {allNews.map((news: News) =>
+            news.kind === KindNews.video ? (
+              <VideoPlayer key={news.url} title={news.title} url={news.url} />
+            ) : (
+              <ImageNews key={news.paths[0]} title={news.title} paths={news.paths} />
+            ),
+          )}
         </div>
       </>
     </Layout>
