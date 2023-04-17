@@ -23,7 +23,7 @@ const _allVideos: News[] = [
   },
   {
     title: "У нас появились новые враги!",
-    paths: ["/images/enemies/enemy1.jpg", "/images/enemies/enemy2.jpg"],
+    paths: ["/images/enemies/enemy3.png", "/images/enemies/enemy2.jpg"],
     kind: KindNews.images,
   },
   {
