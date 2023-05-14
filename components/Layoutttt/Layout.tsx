@@ -78,8 +78,12 @@ export const Layout: React.FC<Props> = ({ children, home }): any => {
           <Link href={"https://www.youtube.com/@synthadry3022"}>
             <Image src={"/images/youtube.svg"} alt={"youtube"} width={65} height={50} />
           </Link>
-          <Image src={"/images/telegram.png"} alt={"youtube"} width={45} height={45} />
-          <Image src={"/images/vk.webp"} alt={"youtube"} width={40} height={40} />
+          <Link href={"https://t.me/Synthadry"}>
+            <Image src={"/images/telegram.png"} alt={"youtube"} width={45} height={45} />
+          </Link>
+          <Link href={"https://vk.com/synthadry"}>
+            <Image src={"/images/vk.webp"} alt={"youtube"} width={40} height={40} />
+          </Link>
         </div>
         <div className={styles.copyright}>© Copyright Synthadry 2022 - 2022</div>
       </footer>
