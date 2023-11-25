@@ -17,7 +17,7 @@ const ImageNews: React.FC<Props> = ({ title, paths }): any => {
       <div className={styles.images}>
         <Carousel
           showThumbs={false}
-          width={"80vw"}
+          width={"75vw"}
           autoPlay={true}
           infiniteLoop={true}
           stopOnHover={false}

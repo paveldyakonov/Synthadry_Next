@@ -13,10 +13,9 @@ const VideoPlayer: React.FC<Props> = ({ title, url }): any => {
     <div className={styles.video_block}>
       <div className={styles.title}>{title}</div>
       <ReactPlayer
-        width={"80vw"}
-        height={"40vw"}
+        width={"75vw"}
+        height={"37vw"}
         url={url}
-        playing
         muted
         controls
         style={{

@@ -2,11 +2,12 @@ import Layout from "@components/Layoutttt";
 import Head from "next/head";
 import { User, getAllUsersIds, getUser } from "@lib/users";
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from "next";
-import React from "react";
+import React, { useEffect } from "react";
 
 import styles from "@styles/personId.module.scss";
 import Image from "next/image";
 import TaskCard from "@components/TaskCard";
+import { showToast } from "@utils/showToast";
 
 type Props = {
   userData: User;
@@ -30,6 +31,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const Person: React.FC<Props> = ({ userData }): any => {
+  useEffect(() => {
+    if (userData.new) {
+      showToast(`Познакомьтесь с нашим новым участником - ${userData.name}!`);
+    }
+  }, []);
+
   return (
     <Layout>
       <>
@@ -52,6 +59,7 @@ export const Person: React.FC<Props> = ({ userData }): any => {
             <div className={styles.card__name}>{userData.name}</div>
             <div className={styles.card__profession}>{userData.profession}</div>
             <div className={styles.card__mark}>Количество баллов: {userData.mark}</div>
+            {userData.new && <div className={styles.new_user}>Новый</div>}
           </div>
           <div className={styles.tasks_block}>
             <h1 className={styles.task_title}>Задачи на неделю</h1>

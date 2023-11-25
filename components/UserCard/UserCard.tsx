@@ -6,7 +6,15 @@ import Link from "next/link";
 import styles from "./UserCard.module.scss";
 import Image from "next/image";
 
-const UserCard: React.FC<User> = ({ id, name, profession, image, mark, tasks }): any => {
+const UserCard: React.FC<User> = ({
+  id,
+  name,
+  profession,
+  image,
+  mark,
+  tasks,
+  new: isNew,
+}): any => {
   return (
     <Link className={styles.card_link} href={`/team/${id}`}>
       <div className={styles.card}>
@@ -26,6 +34,7 @@ const UserCard: React.FC<User> = ({ id, name, profession, image, mark, tasks }):
           <div className={styles.content__profession}>{profession}</div>
           <div className={styles.content__mark}>Рейтинг: {mark}</div>
         </div>
+        {isNew && <div className={styles.new_user}>Новый</div>}
       </div>
     </Link>
   );

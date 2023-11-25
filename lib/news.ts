@@ -31,9 +31,9 @@ const _allVideos: News[] = [
     kind: KindNews.images,
   },
   {
-    title: "Наше огнестрельное оружие",
-    paths: ["/images/news/pistol.jpg", "/images/news/shotgun1.jpg", "/images/news/shotgun2.png"],
-    kind: KindNews.images,
+    title: "Наше новое оружие!",
+    url: "https://www.youtube.com/watch?v=jK7qM0aRs9g",
+    kind: KindNews.video,
   },
   {
     title: '"Ночь, улица, факел, чекпойнты"',
@@ -41,13 +41,21 @@ const _allVideos: News[] = [
     kind: KindNews.video,
   },
   {
-    title: "Окружение в лесу",
+    title: "Окружение на локациях",
     paths: [
+      "/images/news/environment/houses_in_forest.jpg",
+      "/images/news/environment/houses_in_forest(1).jpg",
+      "/images/news/environment/table_chest.jpg",
       "/images/news/environment/brevna.jpg",
       "/images/news/environment/colodec.jpg",
       "/images/news/environment/polena.jpg",
     ],
     kind: KindNews.images,
+  },
+  {
+    title: "Прототип нового инвентаря",
+    url: "https://www.youtube.com/watch?v=rvXWQ0e0O3A",
+    kind: KindNews.video,
   },
   {
     title: "Упс... Немного спойлеров",

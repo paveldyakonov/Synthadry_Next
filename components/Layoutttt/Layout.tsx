@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import Script from "next/script";
 import styles from "./Layout.module.scss";
 import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/router";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const name = "[Your Name]";
 export const siteTitle = "Synthadry Game";
@@ -24,6 +25,18 @@ export const Layout: React.FC<Props> = ({ children, home }): any => {
         <meta name="description" content="Synthadry" />
         <meta name="og:title" content={siteTitle} />
       </Head>
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <header className={styles.header}>
         <div className={styles.navbar}>
           <div className={styles.navbar__title}>SYNTHADRY</div>

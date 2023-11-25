@@ -39,6 +39,7 @@
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,6 +53,22 @@
     min-height: 400px;
     max-height: 600px;
     transition: all .3s ease-in-out;
+
+    & .new_user {
+        position: absolute;
+        text-align: center;
+        background-color: deepskyblue;
+        font-size: 12px;
+        width: max-content;
+        padding: 0 5px;
+        height: 20px;
+        border-radius: 5px;
+        right: 15px;
+        top: 15px;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    }
 
     &__img {
         position: relative;
