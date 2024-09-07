@@ -28,6 +28,7 @@ const Team: React.FC<Props> = ({ allUsers }): any => {
         <div className={styles.users}>
           {allUsers
             .sort((a, b) => parseInt(b.mark) - parseInt(a.mark))
+            .filter((user) => !user.isHidden)
             .map((user) => (
               <MotionContainer key={user.id}>
                 <UserCard

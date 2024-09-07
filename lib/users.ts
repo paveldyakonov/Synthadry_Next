@@ -6,6 +6,7 @@ export type User = {
   mark: string;
   tasks: string[];
   new: boolean;
+  isHidden?: boolean;
 };
 
 const _allUsers: User[] = [
@@ -215,6 +216,16 @@ const _allUsers: User[] = [
     mark: "0",
     tasks: [],
     new: true,
+  },
+  {
+    id: "228",
+    name: "Олег Пудж",
+    profession: "Пидрила",
+    image: "/images/users/pudg.jpg",
+    mark: "1000000",
+    tasks: [],
+    new: true,
+    isHidden: true,
   },
 ];
 
